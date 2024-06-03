@@ -1,14 +1,16 @@
 import Slide5 from "@/public/assets/Slide5.png";
 import Spray3 from "@/public/assets/Spray3.png";
 import Image from "next/image";
+import Star from "@/public/assets/Star.png"
+
 import TestimonialPeople from "@/public/assets/TestimonialPeople.png";
 
 export default function Testimonials() {
     return (
-        <div className="w-full max-w-7xl mx-auto px-4">
-            <span className="mt-28 w-full flex flex-col justify-center items-center text-center">
+        <div className="mt-28 relative w-full max-w-7xl mx-auto px-4">
+            <span className="w-full flex flex-col justify-center items-center text-center">
                 <h1 className="text-2xl">Testimonials</h1>
-                <span className="sm:text-4xl lg:text-5xl font-extrabold flex flex-col items-center justify-center">
+                <span className="text-4xl lg:text-5xl font-extrabold flex flex-col items-center justify-center">
                     <p>What our users</p>
                     <p>say about us?</p>
                 </span>
@@ -30,6 +32,8 @@ export default function Testimonials() {
                     </span>
                 </div>
             </section>
+            <Image src={Star} alt="Star" className="absolute hidden md:block right-16 top-8 rotate-45" />
+            <Image src={Star} alt="Star" className="absolute left-16 hidden md:block bottom-8 rotate-45" />
         </div>
     );
 }

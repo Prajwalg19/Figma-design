@@ -4,11 +4,13 @@ import Spray1 from "@/public/assets/Spray1.png";
 import {IoCubeOutline, IoStarHalfSharp} from "react-icons/io5";
 import {TbBrandPrisma} from "react-icons/tb";
 import IPhoneSlide2 from "@/public/assets/IphoneSlide2.png";
+import Star from "@/public/assets/Star.png"
 
 export default function FeatureSection() {
     return (
         <>
-            <div className="font-custom tracking-wider mt-0 lg:mt-8 flex flex-col lg:flex-row gap-10 lg:gap-20 w-full px-4">
+            <div className="font-custom relative tracking-wider mt-0 lg:mt-8 flex flex-col lg:flex-row gap-10 lg:gap-20 w-full px-4">
+                <Image src={Spray1} className="absolute blur-3xl -right-36 -z-10" alt="Spray" />
                 <div className="relative w-full hidden lg:block">
                     <Image src={IPhoneSlide2} alt="IPhoneFront1" className="" width={650} height={700} />
                     <Image src={Spray3} alt="Spray3" className="absolute -left-10 -top-10 -z-10" />
@@ -40,6 +42,8 @@ export default function FeatureSection() {
                         <h1 className="text-center lg:text-left text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci ea obcaecati vel assumenda, rem repellat et vitae.</h1>
                     </section>
                 </div>
+                <Image src={Star} alt="Star" className="absolute hidden md:block right-16 top-8 rotate-45" />
+
             </div>
         </>
     );
