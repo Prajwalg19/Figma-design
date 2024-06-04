@@ -1,13 +1,19 @@
+"use client"
 import IPhoneSlide4 from "@/public/assets/IPhoneSlide4.png"
 import Image from "next/image"
 import Spray3 from "@/public/assets/Spray3.png"
 import Star from "@/public/assets/Star.png"
 import {PiStarFour} from "react-icons/pi";
 import WhiteStar from "@/public/assets/WhiteStar.png"
+import {useInView} from "react-intersection-observer";
+import {motion} from "framer-motion";
 
 export default function FullyCust() {
+    const {ref} = useInView({
+        threshold: 1,
+    });
     return (
-        <div className="mt-24 lg:mt-0 font-custom tracking-wider relative flex flex-col lg:flex-row gap-10 lg:gap-20 w-full px-4">
+        <motion.div ref={ref} initial={{opacity: 0, x: -35}} whileInView={{opacity: 1, x: 0, transition: {duration: 0.6}}} viewport={{once: true}} className="mt-24 lg:mt-0 font-custom tracking-wider relative flex flex-col lg:flex-row gap-10 lg:gap-20 w-full px-4">
             <div className="hidden lg:block relative w-full">
                 <Image src={IPhoneSlide4} alt="IPhoneFront4" className="" width={650} height={700} />
                 <Image src={Spray3} alt="IPhoneFront4" className="absolute -left-10 -top-10 -z-10 block dark:hidden" />
@@ -25,7 +31,7 @@ export default function FullyCust() {
                 </span>
             </div>
 
-        </div>
+        </motion.div>
 
 
     )

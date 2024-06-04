@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    --line-color: #e5e7ed; /* added this here because the line-color from the react vertical timeline messed up with the main html parent tag*/
+}
+html.dark {
+    --line-color: rgba(255, 255, 255, 0.1);
+}
+
 @font-face {
   font-family: 'clash-display-bold';
   src: url('../public/Fonts/clash-display/ClashDisplayBold.otf') format('woff2');

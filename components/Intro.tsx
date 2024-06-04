@@ -1,3 +1,4 @@
+"use client"
 import Spray1 from "@/public/assets/Spray1.png";
 import Image from "next/image";
 import {HiArrowLongRight} from "react-icons/hi2";
@@ -9,15 +10,15 @@ import IPhoneFront2 from "@/public/assets/iPhone-13-Pro-Front_2.png";
 import Spray2 from "@/public/assets/Spary2.png";
 import Frame from "@/public/assets/Frame 1.png";
 import WhiteStar from "@/public/assets/WhiteStar.png"
-
+import {motion} from "framer-motion";
 export default function Intro() {
     return (
         <>
-            <div className="z-0 relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-                <Image src={Spray1} alt="Spray1" className="dark:hidden -z-10 absolute  -top-16 md:left-24 left-0" />
+            <div className="mt-16 lg:mt-0 z-0 relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+                <motion.div initial={{opacity: 0}} animate={{opacity: 1}}><Image src={Spray1} alt="Spray1" className="dark:hidden -z-10 absolute  -top-16 md:left-24 left-0" /> </motion.div>
                 <div className="hidden dark:block -z-10 bg-purple-700 absolute w-[15rem] h-[15rem] blur-3xl md:left-48 left-0"></div>
                 <div className="flex flex-col lg:flex-row gap-10 items-center">
-                    <section className="relative flex flex-col gap-9 lg:w-1/2 text-center lg:text-left">
+                    <motion.section initial={{opacity: 0, y: -35}} animate={{opacity: 1, y: 0}} transition={{duration: 0.6}} className="relative flex flex-col gap-9 lg:w-1/2 text-center lg:text-left">
                         <p className="capitalize font-clashBold text-4xl sm:text-5xl lg:text-6xl">Make the best<br /> financial decisions</p>
                         <p className="text-gray-600 text-base sm:text-lg font-clashMedium dark:text-gray-300">Our services provide you with the scientific solutions to <br /> every business step you are about to take</p>
                         <span className="flex flex-col sm:flex-row gap-4 sm:gap-14 items-center justify-center lg:justify-start">
@@ -35,17 +36,17 @@ export default function Intro() {
                             <Image src={Star} width={50} height={50} alt="Star" className="block dark:hidden rotate-45 absolute top-[3rem] left-[8rem]" />
                             <Image src={ZigZag} width={550} height={400} alt="ZigZag" className="" />
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className="hidden -top-52 relative w-full lg:w-1/2 h-[500px] lg:flex justify-center items-center">
+                    <motion.section initial={{opacity: 0, x: 30}} animate={{opacity: 1, x: 0}} transition={{duration: 0.6}} className="hidden -top-52 relative w-full lg:w-1/2 h-[500px] lg:flex justify-center items-center">
                         <Image src={IPhoneFront1} alt="iPhone" className="absolute xl:-top-4 lg:top-10 lg:-left-14 xl:-left-6 z-30 lg:max-w-[90%] xl:max-w-none" />
                         <Image src={IPhoneFront2} alt="iPhone" className="absolute lg:left-10 lg:top-24 xl:top-14 xl:left-24 z-20 lg:max-w-[90%] xl:max-w-none" />
                         <Image src={Frame} alt="Frame" className="absolute lg:top-16 lg:left-4 xl:-top-1 xl:left-24 z-10 lg:max-w-[90%] xl:max-w-none" />
                         <Image src={Spray2} alt="Spray2" className="dark:hidden block blur-3xl lg:blur-lg absolute top-6 left-24 z-0 max-w-[80%] lg:max-w-none" />
                         <span className="dark:block bg-purple-600 w-[15rem] h-[20rem] rounded-full hidden blur-3xl absolute top-[300px] left-24 z-0 max-w-[80%] lg:max-w-none" ></span>
-                    </section>
+                    </motion.section>
                 </div>
-            </div>
+            </div >
         </>
     );
 }

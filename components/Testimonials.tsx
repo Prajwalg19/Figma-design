@@ -1,14 +1,20 @@
+"use client"
 import Slide5 from "@/public/assets/Slide5.png";
 import Spray3 from "@/public/assets/Spray3.png";
 import Image from "next/image";
 import Star from "@/public/assets/Star.png"
 import WhiteStar from "@/public/assets/WhiteStar.png"
+import {useInView} from "react-intersection-observer";
+import {motion} from "framer-motion";
 
 import TestimonialPeople from "@/public/assets/TestimonialPeople.png";
 
 export default function Testimonials() {
+    const {ref} = useInView({
+        threshold: 1,
+    });
     return (
-        <div className="mt-28 relative w-full max-w-7xl mx-auto px-4">
+        <motion.div ref={ref} initial={{opacity: 0, x: 35}} whileInView={{opacity: 1, x: 0, transition: {duration: 0.6}}} viewport={{once: true}} className="mt-28 relative w-full max-w-7xl mx-auto px-4">
             <span className="w-full flex flex-col justify-center items-center text-center">
                 <h1 className="text-2xl font-clashMedium">Testimonials</h1>
                 <span className="text-4xl lg:text-5xl font-extrabold flex flex-col items-center justify-center font-clashBold">
@@ -39,6 +45,6 @@ export default function Testimonials() {
             <Image src={WhiteStar} alt="Star" className="absolute hidden dark:md:block right-16 top-8 rotate-45" />
             <Image src={WhiteStar} alt="Star" className="absolute left-16 hidden dark:md:block bottom-8 rotate-45" />
 
-        </div>
+        </motion.div>
     );
 }

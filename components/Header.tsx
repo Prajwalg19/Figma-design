@@ -4,18 +4,19 @@ import CompanyIcon from "@/public/assets/Icon.png";
 import {useState} from "react";
 import {FiMenu} from "react-icons/fi";
 import {AiOutlineClose} from "react-icons/ai";
+import {motion} from "framer-motion"
 export default function Header() {
     const [sideBar, setSideBar] = useState(false);
 
     return (
-        <div className="w-full z-50 max-w-7xl mx-auto lg:mt-6 mt-2 mb-2 px-2">
+        <motion.div initial={{opacity: 0, y: -10}} animate={{opacity: 1, y: 0}} className="w-full z-50 max-w-7xl mx-auto lg:mt-6 mt-2 mb-2 px-2">
             <section className="flex justify-between items-center">
-                <ul className="font-clashRegular tracking-wider hidden lg:flex flex-row gap-10 items-center font-semibold">
+                <ul className="z-10  font-clashRegular tracking-wider hidden lg:flex flex-row gap-10 items-center font-semibold">
                     <li className="dark:bg-slate-300 dark:p-1 dark:rounded-3xl"><Image src={CompanyIcon} width={100} height={40} alt="Company icon" /></li>
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Pricing</li>
-                    <li>Features</li>
+                    <li className="cursor-pointer">Home</li>
+                    <li className="cursor-pointer">About us</li>
+                    <li className="cursor-pointer">Pricing</li>
+                    <li className="cursor-pointer">Features</li>
                 </ul>
                 <section className="lg:flex flex-row hidden gap-10 items-center ">
                     <button className="font-clashSemiBold hidden lg:block py-3 px-11 bg-black rounded-sm text-white hover:scale-105 active:scale-100 transition border dark:border-gray-300/40">Download</button>
@@ -47,6 +48,6 @@ export default function Header() {
                 </section>
             </nav>
 
-        </div >
+        </motion.div >
     );
 }
