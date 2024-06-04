@@ -3,10 +3,30 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'MyCustomFont';
+  font-family: 'clash-display-bold';
   src: url('../public/Fonts/clash-display/ClashDisplayBold.otf') format('woff2');
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'clash-display-regular';
+  src: url('../public/Fonts/clash-display/ClashDisplayRegular.otf') format('woff2');
   font-weight: 400;
-  font-style: normal;
+  font-style: base;
+}
+@font-face {
+  font-family: 'clash-display-medium';
+  src: url('../public/Fonts/clash-display/ClashDisplayMedium.otf') format('woff2');
+  font-weight: 500;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: 'clash-display-semibold';
+  src: url('../public/Fonts/clash-display/ClashDisplaySemibold.otf') format('woff2');
+  font-weight: 600;
+  font-style: semibold;
 }
 
 body{

@@ -15,7 +15,10 @@ const config: Config = {
             //    "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
             //},
             fontFamily: {
-                custom: ['MyCustomFont', 'sans-serif'],
+                clashBold: ['clash-display-bold', 'sans-serif'],
+                clashRegular: ['clash-display-regular', 'sans-serif'],
+                clashMedium: ['clash-display-medium', 'sans-serif'],
+                clashSemiBold: ['clash-display-semibold', 'sans-serif']
             },
             rotate: {
                 '14': '14deg',

@@ -10,7 +10,7 @@ export default function Header() {
     return (
         <div className="w-full z-50 max-w-7xl mx-auto lg:mt-6 mt-2 mb-2 px-2">
             <section className="flex justify-between items-center">
-                <ul className="hidden lg:flex flex-row gap-10 items-center font-semibold">
+                <ul className="font-clashRegular tracking-wider hidden lg:flex flex-row gap-10 items-center font-semibold">
                     <li className="dark:bg-slate-300 dark:p-1 dark:rounded-3xl"><Image src={CompanyIcon} width={100} height={40} alt="Company icon" /></li>
                     <li>Home</li>
                     <li>About us</li>
@@ -18,7 +18,7 @@ export default function Header() {
                     <li>Features</li>
                 </ul>
                 <section className="lg:flex flex-row hidden gap-10 items-center ">
-                    <button className="hidden lg:block py-3 px-11 bg-black rounded-sm text-white hover:scale-105 active:scale-100 transition border dark:border-gray-300/40">Download</button>
+                    <button className="font-clashSemiBold hidden lg:block py-3 px-11 bg-black rounded-sm text-white hover:scale-105 active:scale-100 transition border dark:border-gray-300/40">Download</button>
 
                 </section>
                 <button onClick={() => setSideBar(!sideBar)} className="z-50 lg:hidden text-2xl flex w-full justify-between flex-row gap-5 items-center">
@@ -35,13 +35,13 @@ export default function Header() {
                     </button>
                 </div>
                 <section className="flex flex-col items-center gap-10 mt-36">
-                    <ul className="flex flex-col items-center gap-12 font-semibold">
+                    <ul className="flex flex-col items-center gap-12 font-clashSemiBold text-2xl">
                         <li className="cursor-pointer" onClick={() => setSideBar(false)}>Home</li>
                         <li className="cursor-pointer" onClick={() => setSideBar(false)}>About us</li>
                         <li className="cursor-pointer" onClick={() => setSideBar(false)}>Pricing</li>
                         <li className="cursor-pointer" onClick={() => setSideBar(false)}>Features</li>
                     </ul>
-                    <button onClick={() => setSideBar(false)} className="py-3 px-11 bg-black rounded-sm text-white hover:scale-105 active:scale-100 transition border dark:border-gray-300/40">
+                    <button onClick={() => setSideBar(false)} className="py-3 px-11 bg-black rounded-sm text-white hover:scale-105 active:scale-100 transition border dark:border-gray-300/40 font-clashSemiBold">
                         Download
                     </button>
                 </section>

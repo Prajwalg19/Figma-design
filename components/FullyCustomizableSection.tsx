@@ -16,11 +16,11 @@ export default function FullyCust() {
             <div className="flex flex-col gap-8 items-center lg:items-start justify-center">
                 <span className="flex flex-row items-center gap-5">
                     <span className="bg-orange-600 rounded-full text-white p-3"><PiStarFour className="lg:text-2xl text-lg" /> </span>
-                    <span className="lg:text-3xl text-xl font-semibold">Fully Customizable</span>
+                    <span className="lg:text-3xl text-xl font-semibold font-clashSemiBold">Fully Customizable</span>
                 </span>
-                <Image src={Star} alt="Star" className="absolute -left-16 top-8 rotate-45" />
-                <Image src={WhiteStar} alt="Star" className="absolute -left-16 top-8 rotate-45" />
-                <span className="dark:text-gray-300/90 text-center lg:text-left text-gray-600 text-lg">
+                <Image src={Star} alt="Star" className="md:block dark:hidden absolute -left-16 top-8 rotate-45" />
+                <Image src={WhiteStar} alt="Star" className="dark:md:block hidden absolute -left-16 top-8 rotate-45" />
+                <span className="dark:text-gray-300/90 text-center lg:text-left text-gray-600 text-lg font-clashMedium">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. A maiores eligendi maxime temporibus facilis quod facere tenetur voluptatem ut id placeat obcaecati dolor repellendus, cum ex nulla impedit atque ab?
                 </span>
             </div>

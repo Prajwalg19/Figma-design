@@ -8,12 +8,12 @@ export default function AdvantagesSection() {
             <div className="mt-36 lg:mt-20 font-custom tracking-wider flex flex-col lg:flex-row gap-10 lg:gap-20 w-full px-4">
                 <section className="flex flex-col gap-8 w-full">
                     <article className="flex flex-col gap-2">
-                        <p className="text-orange-600 text-2xl text-center lg:text-left">Advantages</p>
-                        <h1 className="font-extrabold text-3xl text-center lg:text-left sm:text-4xl lg:text-5xl">Why choose Urify? </h1>
+                        <p className="text-orange-600 text-2xl text-center lg:text-left font-clashMedium">Advantages</p>
+                        <h1 className="font-extrabold text-3xl text-center lg:text-left sm:text-4xl lg:text-5xl font-clashBold">Why choose Urify? </h1>
                     </article>
                     <section className="flex flex-col gap-8  items-center lg:items-start ">
-                        <h3 className="flex flex-row items-center gap-5"><span className="bg-orange-600 rounded-full text-white p-3"><GoBell className="lg:text-2xl text-lg" /></span><span className="lg:text-3xl text-xl font-semibold">Clever Notifications</span></h3>
-                        <p className="text-center dark:text-gray-300/90 lg:text-left text-gray-600 text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores reiciendis omnis quisquam modi enim, repellendus ullam, asperiores, ea voluptas officiis sit. Ex aliquid voluptatem laborum cum. Reprehenderit nesciunt in esse!</p>
+                        <h3 className="flex flex-row items-center gap-5"><span className="bg-orange-600 rounded-full text-white p-3"><GoBell className="lg:text-2xl text-lg" /></span><span className="lg:text-3xl text-xl font-semibold font-clashMedium">Clever Notifications</span></h3>
+                        <p className="font-clashMedium text-center dark:text-gray-300/90 lg:text-left text-gray-600 text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores reiciendis omnis quisquam modi enim, repellendus ullam, asperiores, ea voluptas officiis sit. Ex aliquid voluptatem laborum cum. Reprehenderit nesciunt in esse!</p>
 
                     </section>
 

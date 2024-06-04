@@ -10,8 +10,8 @@ export default function Testimonials() {
     return (
         <div className="mt-28 relative w-full max-w-7xl mx-auto px-4">
             <span className="w-full flex flex-col justify-center items-center text-center">
-                <h1 className="text-2xl">Testimonials</h1>
-                <span className="text-4xl lg:text-5xl font-extrabold flex flex-col items-center justify-center">
+                <h1 className="text-2xl font-clashMedium">Testimonials</h1>
+                <span className="text-4xl lg:text-5xl font-extrabold flex flex-col items-center justify-center font-clashBold">
                     <p>What our users</p>
                     <p>say about us?</p>
                 </span>
@@ -25,11 +25,11 @@ export default function Testimonials() {
                 </div>
 
                 <div className="flex flex-col gap-7 justify-center w-full max-w-lg px-4">
-                    <p className="font-semibold text-2xl md:text-3xl">The best financial accounting app ever!</p>
-                    <p className="text-base md:text-lg text-gray-600 dark:text-gray-300/90">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint inventore aut obcaecati ea vero quod voluptatibus architecto? Laudantium numquam accusantium illum quos obcaecati amet dolore illo tenetur, veniam assumenda quaerat."</p>
+                    <p className="font-semibold text-2xl md:text-3xl font-clashSemiBold capitalize">The best financial accounting app ever!</p>
+                    <p className="text-base md:text-lg text-gray-600 dark:text-gray-300/90 font-clashMedium">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint inventore aut obcaecati ea vero quod voluptatibus architecto? Laudantium numquam accusantium illum quos obcaecati amet dolore illo tenetur, veniam assumenda quaerat."</p>
                     <span className="flex flex-row gap-4 items-center">
                         <Image src={TestimonialPeople} alt="People" />
-                        <p className="text-lg md:text-xl font-semibold text-center md:text-left text-gray-300/90">- Bingo Man</p>
+                        <p className="text-lg md:text-xl font-semibold text-center md:text-left text-gray-600/90 font-clashSemiBold">- Bingo Man</p>
 
                     </span>
                 </div>

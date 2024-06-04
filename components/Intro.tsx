@@ -18,16 +18,16 @@ export default function Intro() {
                 <div className="hidden dark:block -z-10 bg-purple-700 absolute w-[15rem] h-[15rem] blur-3xl md:left-48 left-0"></div>
                 <div className="flex flex-col lg:flex-row gap-10 items-center">
                     <section className="relative flex flex-col gap-9 lg:w-1/2 text-center lg:text-left">
-                        <p className="capitalize font-extrabold text-4xl sm:text-5xl lg:text-6xl">Make the best<br /> financial decisions</p>
-                        <p className="text-gray-600 text-base sm:text-lg dark:text-gray-300">Our services provide you with the scientific solutions to <br /> every business step you are about to take</p>
+                        <p className="capitalize font-clashBold text-4xl sm:text-5xl lg:text-6xl">Make the best<br /> financial decisions</p>
+                        <p className="text-gray-600 text-base sm:text-lg font-clashMedium dark:text-gray-300">Our services provide you with the scientific solutions to <br /> every business step you are about to take</p>
                         <span className="flex flex-col sm:flex-row gap-4 sm:gap-14 items-center justify-center lg:justify-start">
-                            <button type="button" className="dark:border-gray-300/40 border py-4 w-full shadow-md sm:w-auto whitespace-nowrap px-11 group bg-black rounded-sm text-white flex flex-row justify-center items-center gap-2">
+                            <button type="button" className="dark:border-gray-300/40 border py-4 w-full shadow-md sm:w-auto whitespace-nowrap px-11 group bg-black rounded-sm text-white flex flex-row justify-center items-center gap-2 font-clashSemiBold tracking-wider">
                                 <span>Get Started</span>
                                 <span><HiArrowLongRight className="text-gray-300 text-2xl group-hover:translate-x-2 transition ease-in-out" /></span>
                             </button>
                             <span className="cursor-pointer px-9 border border-gray-300 rounded-sm shadow-md flex gap-3 justify-center flex-row items-center py-[12px] w-full sm:w-auto group  hover:shadow-xl hover:scale-105 transition active:scale-100">
                                 <FaRegCirclePlay className="text-2xl" />
-                                <p className="text-lg text-nowrap">Watch Video</p>
+                                <p className="text-lg text-nowrap font-clashSemiBold ">Watch Video</p>
                             </span>
                         </span>
                         <div className="relative mt-3">
