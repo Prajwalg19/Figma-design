@@ -44,7 +44,7 @@ export default function FAQ() {
                         </p>
                     </div>
                 </section>
-                <section className="relative w-full flex flex-col lg:flex-row justify-center items-center dark:bg-purple-700  bg-[#ff5556] px-4 py-8 text-white rounded-lg">
+                <section className="order-1 lg:order-2 relative w-full flex flex-col lg:flex-row justify-center items-center dark:bg-purple-700  bg-[#ff5556] px-4 py-8 text-white rounded-lg">
                     <div className="text-center lg:text-left">
                         <h2 className="capitalize font-bold text-xl lg:text-3xl font-clashSemiBold mb-4">Eligendi deserunt deleniti ducimus voluptate commodi nam?</h2>
                         <p className="text-sm lg:text-base font-clashMedium tracking-wider">
