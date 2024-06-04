@@ -12,7 +12,7 @@ export default function AdvantagesSection() {
     });
     return (
         <>
-            <motion.div ref={ref} initial={{opacity: 0, x: 35}} whileInView={{opacity: 1, x: 0, transition: {duration: 0.6}}} viewport={{once: true}} className="mt-36 lg:mt-20 font-custom tracking-wider flex flex-col lg:flex-row gap-10 lg:gap-20 w-full px-4">
+            <motion.div ref={ref} initial={{opacity: 0, x: 8}} whileInView={{opacity: 1, x: 0, transition: {duration: 0.6}}} viewport={{once: true}} className="mt-36 lg:mt-20 font-custom tracking-wider flex flex-col lg:flex-row gap-10 lg:gap-20 w-full px-4">
                 <section className="flex flex-col gap-8 w-full">
                     <article className="flex flex-col gap-2">
                         <p className="text-orange-600 text-2xl text-center lg:text-left font-clashMedium">Advantages</p>

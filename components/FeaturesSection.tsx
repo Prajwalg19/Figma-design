@@ -15,7 +15,7 @@ export default function FeatureSection() {
     });
     return (
         <>
-            <motion.div ref={ref} initial={{opacity: 0, x: 35}} whileInView={{opacity: 1, x: 0, transition: {duration: 0.6}}} viewport={{once: true}} className="font-custom relative tracking-wider mt-0 lg:mt-8 flex flex-col lg:flex-row gap-10 lg:gap-20 w-full px-4">
+            <motion.div ref={ref} initial={{opacity: 0, x: 8}} whileInView={{opacity: 1, x: 0, transition: {duration: 0.6}}} viewport={{once: true}} className="font-custom relative tracking-wider mt-0 lg:mt-8 flex flex-col lg:flex-row gap-10 lg:gap-20 w-full px-4">
                 <Image src={Spray1} className="dark:hidden block absolute blur-3xl w-[60%] lg:w-auto lg:-right-36 -z-10" alt="Spray" />
 
                 <span className="dark:block hidden absolute blur-3xl w-[60%] lg:w-auto lg:-right-36 -z-10 bg-purple-600 rounded-full" ></span>
