@@ -5,10 +5,10 @@ import {FaPhone} from "react-icons/fa6";
 
 export default function Footer() {
     return (
-        <footer className="text-base w-full mt-32 px-4 lg:px-8 py-8 text-gray-600">
+        <footer className="text-base w-full mt-32 px-4 lg:px-8 py-8 text-gray-600 dark:text-gray-300/90">
             <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center lg:items-start justify-between">
                 <section className="flex flex-col items-center lg:items-start gap-5">
-                    <Image src={Icon} alt="Website icon" />
+                    <Image src={Icon} alt="Website icon" className="dark:bg-slate-300 dark:p-1 dark:rounded-3xl" />
                     <div className="flex items-center gap-3">
                         <BiSolidMessageDetail className="text-xl text-orange-600" />
                         <p>Help@gmail.com</p>
@@ -48,14 +48,14 @@ export default function Footer() {
                         <input
                             type="text"
                             placeholder="Your email"
-                            className="border border-gray-200 py-2 px-3 w-full lg:w-auto flex-grow"
+                            className="border border-gray-200 py-2 px-3 w-full lg:w-auto flex-grow text-black"
                         />
-                        <button className="py-2 px-6 bg-black rounded-sm text-white text-base">Subscribe</button>
+                        <button className="py-2 px-6 bg-black rounded-sm text-white text-base border dark:border-gray-300/40">Subscribe</button>
                     </div>
                 </section>
             </div>
             <hr className="my-10" />
-            <p className="text-center text-gray-600 text-xs">Copyright 2024 Demo&copy;, All Rights Reserved</p>
+            <p className="text-center text-gray-600 text-xs dark:text-gray-300/90">Copyright 2024 Demo&copy;, All Rights Reserved</p>
 
         </footer>
     );

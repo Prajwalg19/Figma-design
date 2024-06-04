@@ -2,6 +2,7 @@ import Slide5 from "@/public/assets/Slide5.png";
 import Spray3 from "@/public/assets/Spray3.png";
 import Image from "next/image";
 import Star from "@/public/assets/Star.png"
+import WhiteStar from "@/public/assets/WhiteStar.png"
 
 import TestimonialPeople from "@/public/assets/TestimonialPeople.png";
 
@@ -19,21 +20,25 @@ export default function Testimonials() {
             <section className="flex flex-col md:flex-row gap-8 items-center justify-center mt-10">
                 <div className="relative w-full max-w-lg">
                     <Image src={Slide5} alt="Slide5" className="w-full h-auto" />
-                    <Image src={Spray3} alt="Spray3" className="absolute left-1 top-24 -z-10 w-full max-w-lg" />
+                    <Image src={Spray3} alt="Spray3" className="dark:hidden block absolute left-1 top-24 -z-10 w-full max-w-lg" />
+                    <span className="bg-purple-600 hidden dark:block blur-3xl rounded-full absolute left-20 top-24 -z-10 w-[10rem] md:w-[13rem] lg:w-[18rem] h-[18rem]" ></span>
                 </div>
 
                 <div className="flex flex-col gap-7 justify-center w-full max-w-lg px-4">
                     <p className="font-semibold text-2xl md:text-3xl">The best financial accounting app ever!</p>
-                    <p className="text-base md:text-lg">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint inventore aut obcaecati ea vero quod voluptatibus architecto? Laudantium numquam accusantium illum quos obcaecati amet dolore illo tenetur, veniam assumenda quaerat."</p>
+                    <p className="text-base md:text-lg text-gray-600 dark:text-gray-300/90">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint inventore aut obcaecati ea vero quod voluptatibus architecto? Laudantium numquam accusantium illum quos obcaecati amet dolore illo tenetur, veniam assumenda quaerat."</p>
                     <span className="flex flex-row gap-4 items-center">
                         <Image src={TestimonialPeople} alt="People" />
-                        <p className="text-lg md:text-xl font-semibold text-center md:text-left">- Bingo Man</p>
+                        <p className="text-lg md:text-xl font-semibold text-center md:text-left text-gray-300/90">- Bingo Man</p>
 
                     </span>
                 </div>
             </section>
-            <Image src={Star} alt="Star" className="absolute hidden md:block right-16 top-8 rotate-45" />
-            <Image src={Star} alt="Star" className="absolute left-16 hidden md:block bottom-8 rotate-45" />
+            <Image src={Star} alt="Star" className="absolute dark:hidden hidden md:block right-16 top-8 rotate-45" />
+            <Image src={Star} alt="Star" className="absolute dark:hidden left-16 hidden md:block bottom-8 rotate-45" />
+            <Image src={WhiteStar} alt="Star" className="absolute hidden dark:md:block right-16 top-8 rotate-45" />
+            <Image src={WhiteStar} alt="Star" className="absolute left-16 hidden dark:md:block bottom-8 rotate-45" />
+
         </div>
     );
 }
