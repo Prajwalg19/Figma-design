@@ -8,7 +8,7 @@ import Footer from "@/components/Foooter";
 export default function Home() {
     return (
 
-        <main className="font-custom mx-auto max-w-7xl relative px-2 ">
+        <main className="font-custom mx-auto max-w-[115rem] relative px-2 ">
             <Intro />
             <FeatureSection />
             <AdvantagesSection />
